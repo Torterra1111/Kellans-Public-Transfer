@@ -292,9 +292,9 @@ void MainGame::drawGame()
 	transform.SetRot(glm::vec3(0.0, counter * 1, 0.0));
 	transform.SetScale(glm::vec3(0.6, 0.6, 0.6));
 	
-	shaderRim.Bind();
-	setRimShader();
-	shaderRim.Update(transform, myCamera);
+	shaderReflect.Bind();
+	SetReflectShader();
+	shaderReflect.Update(transform, myCamera);
 	mesh1.draw();
 	
 	transform.SetPos(glm::vec3(-sinf(counter), -1.0, -sinf(counter)*5));
