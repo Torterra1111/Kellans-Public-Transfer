@@ -219,8 +219,8 @@ void MainGame::SetReflectShader()
 {
 	modelView = transform.GetModel() * myCamera.GetView();
 	shaderReflect.setVec3("cameraPos", myCamera.getPos());
-	shaderReflect.setMat4("view", myCamera.GetView());
-	shaderReflect.setMat4("projection", myCamera.GetProjection());
+	//shaderReflect.setMat4("view", myCamera.GetView());
+	//shaderReflect.setMat4("projection", myCamera.GetProjection());
 	shaderReflect.setMat4("model", modelView);
 }
 
